@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>action</key>
+	<false/>
+	<key>background</key>
+	<true/>
+	<key>category</key>
+	<string>APPLESCRIPTS</string>
+	<key>command</key>
+	<string>-- NOTE: This ONLY works if you have the dock icon enabled in ChronoMate!
+-- NOTE: Currently this ONLY works with the already-selected project. Please switch projects using the normal UI.
+
+on alfred_script(q)
+
+set cmd to missing valueif q is in {"start", "begin", "on"} then	set cmd to "Start"else if q is in {"stop", "end", "off"} then	set cmd to "Stop"else if q is in {"log"} then	set cmd to "Log Hours"end if
+if cmd is not equal to missing value thentell application "ChronoMate" to activatetell application "System Events"	tell application process "ChronoMate"		set cmmenu to menu "ChronoMate" of menu bar item "ChronoMate" of first menu bar		set taskmenu to first menu of first menu item of cmmenu				try			click menu item cmd of taskmenu		end try		close every window	end tellend tell
+end if
+end alfred_script</string>
+	<key>disabled</key>
+	<false/>
+	<key>keyword</key>
+	<string>cm</string>
+	<key>parameter</key>
+	<integer>2</integer>
+	<key>subtitle</key>
+	<string>cm start/stop/log</string>
+	<key>title</key>
+	<string>Control ChronoMate</string>
+</dict>
+</plist>
