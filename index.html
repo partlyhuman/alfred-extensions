@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Alfred Extensions from Partlyhuman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alfred extensions written by Roger Braunstein @partlyhuman">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      html, body {
+        background-color: #f2f2f2;
+        height: 100%;
+      }
+      .appicon {
+        max-width: 100%;
+        padding-top: 3em;
+      }
+      .row-fluid {
+        margin-bottom: 3em;
+      }
+      .container-fluid {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+      }
+      .footer {
+        padding: 10px 50px 10px;
+        text-align: center;
+        font-size: smaller;
+        color: #888;
+        background-color: #e2e2e2;
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+      }
+      .footer p {
+        margin: 0; padding: 0;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+      <div class="page-header">
+        <h1>Alfred Extensions</h1>
+        <h4>by <a href="http://twitter.com/partlyhuman">@partlyhuman</a></h4>
+              <p class="lead">My name's <a href="/">Roger</a>. I use <a href="http://www.alfredapp.com/">Alfred</a> (too). I put together some simple extensions to help me work. I thought I'd share them here. They require the <a href="http://www.alfredapp.com/powerpack/">Powerpack</a>. Enjoy!</p>
+
+      </div>
+
+
+
+      <div class="row-fluid" id="quickquote">
+        <div class="span2">
+          <img src="img/qq.png" class="appicon">
+        </div>
+        <div class="span8">
+          <h3>Quick Quote &amp; Speak Quote</h3>
+          <p>Gets a stock quote... Quick! ... Quickly! Uses Yahoo Finance feeds and a few lines of Ruby. In "Quick Quote," the ticker pops up in Notification Center. (When available, this will be updated to output in large text instead of Notification Center.) In "Speak Quote," the stock price and its movements are read out using your default voice. Cool.</p>
+          <p class="muted">Aside: I also like to set up a custom search for <code class="muted">http://www.google.com/finance?q={query}</code>, but this is far less obtrusive.</p>
+          <p>Usage: <code>qq aapl</code> <code>sq aapl</code></p>
+          <div class="btn-group">
+            <a class="btn" href="quick-quote.alfredextension">Get Quick Quote</a>
+            <a class="btn" href="speak-quote.alfredextension">Get Speak Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid" id="ChronoMate">
+        <div class="span2">
+          <img src="img/chronomate.png" class="appicon">
+        </div>
+        <div class="span8">
+          <h3>ChronoMate Controls</h3>
+          <p><a href="http://chronomateapp.com">ChronoMate</a> is an app for tracking your time in <a href="http://www.freshbooks.com">FreshBooks</a>. It's a great combo for freelancers. I highly recommend both if you haven't given them a shot.</p>
+          <p>With this extension you can do very basic timer control. It uses whatever project is already active. I also recommend <a href="http://jmjeong.com/index.php/archives/636">Pomodoro Controls</a> in conjunction with this.</p>
+          <p class="muted">Note: since ChronoMate is not scriptable, it's required that you have the Dock icon for ChronoMate enabled. This turns on some menu bars that I can get to with System Events.</p>
+          <p>Usage: <code>cm start</code> <code>cm stop</code> <code>cm log</code></p>
+          <a class="btn" href="chronomate.alfredextension">Get ChronoMate Controls</a>
+        </div>
+      </div>
+
+      <div class="row-fluid" id="todo">
+        <div class="span2">
+          <img src="img/reminders.png" class="appicon">
+        </div>
+        <div class="span8">
+          <h3>Todo</h3>
+          <p>All the Reminders scripts out there required me to type too much &mdash; or didn't work. I just need to remember to do one damn thing. Default list, no due dates, just get it on there and out of the front of my mind where it's keeping me from actually working. (Also it doesn't open the Reminders app. That's nice too.)</p>
+          <p>Usage: <code>todo take out trash</code></p>
+          <a class="btn" href="todo.alfredextension">Get Todo</a>
+        </div>
+      </div> <!-- /row -->
+
+      <div class="row-fluid" id="safari">
+        <div class="span2">
+          <img src="img/safari.png" class="appicon">
+        </div>
+        <div class="span8">
+          <h3>New Safari Window</h3>
+          <p>This quickie AppleScript opens a new window of Safari, no matter what Space you're in, without switching Spaces. Like clicking "New Window" on the Dock icon but less sucky. Bind it to a hotkey. That is all.</p>
+          <a class="btn" href="new-safari-window.alfredextension">Get New Safari Window</a>
+        </div>
+      </div> <!-- /row -->
+
+    </div> <!-- /container -->
+
+    <div role="footer" class="footer">
+      This stuff requires <a href="http://www.alfredapp.com">Alfred</a>, a free OS X app, and the <a href="http://www.alfredapp.com/powerpack/">Powerpack</a>, a not so free addon.</p><p>The stuff is written by me, Roger Braunstein, but consider it public domain. You're welcome.</p><p>Yeah, I used the heck out of <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>. All the icons I used here are property their respective owners.</p>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
