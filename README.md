@@ -1,6 +1,8 @@
 Alfred Extensions by Roger Braunstein @partlyhuman
 ==================================================
 
+See the [Project Page](http://partlyhuman.github.com/alfred-extensions/)
+
 My name's Roger. I use [Alfred](http://www.alfredapp.com/) (too). I put together some simple extensions to help me work. I thought I'd share them here. They require the [Powerpack](http://www.alfredapp.com/powerpack/). Enjoy!
 
 ## Quick Quote & Speak Quote
